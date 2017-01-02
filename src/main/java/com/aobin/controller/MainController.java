@@ -45,6 +45,17 @@ public class MainController
         return "hello111";
     }
 
+  /*  @RequestMapping(value = "/js/simple.js", produces = "text/plain;charset=UTF-8")
+    public
+    @ResponseBody
+    String getSimpleJS()
+    {
+        File simpleJS = new File("/WEB-INF/JS/simple.js");
+
+
+        return simpleJS.toString();
+    }*/
+
     @RequestMapping(value = "/say/{msg}", produces = "application/json;charset=UTF-8")
     public
     @ResponseBody
